@@ -1,21 +1,65 @@
-Cloud???
+                                        **Linux**
 
-1. min 4 servers
-2. no of routers
-3. no of gateways
-4. cables
-5. AC
-6. Electricity 24*7
-7. min 5 employees
-8. min 30 days for setup
+Operating System:
 
--Cloud top players:
-1. AWS--> +200 --> 31-32% --> EC2 --> 2006
-2. Microsoft Azure --> 21-23%  ---> 2010
-3. GCP --> 10-13% --> ---> 2011
+-types of user interface:
+1. CLI : Command Line Interface ----> Linux
+2. GUI : Graphical User Interface ----> Windows
+
+history:
+1964 : Bell Lab, New Jersey
+      ---->Multiuser multitasking OS
+
+1969 : They withdraw
+
+Dennis Ritchie and Ken Thompson
+
+1970's : UNICS -----> OS
+
+1976: UNIX v6 ---> paid
+
+1980's:
+          IBM AIX
+          SUN Solaries
+          Apple MAC OS
+          HP  UX
+        
+1991 : Linus torvald 
+--------------------> freax ----> Linux
+
+                   RHEL
+                   Debian
+                   Fedora
+                   MAC Os
+                   others: ---> Ubuntu, kali linux, CentOs, OpenSUSE, mint Linux, Amazon Linux
+
+why Linux??
+1. Open Source:
+2. Security
+3. Light Weight
+4. community support
+5. portable
+6. easy updates --> yum install apache
+
+way to use linux:
+1. offline--> physically install linux
+2. online--> 1. AWS
+             2. Labex.io
+
+**Linux Architecture**
+
+HW:
+1. Desktop OS
+2. Server OS
+3. Linux vs Unix
 
 
-Devops:
+
+
+
+
+
+
 
 
 

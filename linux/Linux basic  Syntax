@@ -1,0 +1,105 @@
+Linux basic commmand:
+
+Username  @  Hostname  :~  #
+  1             2      3   4
+
+  1: name of logged in User
+  2: Machine name
+  3: folder name
+  4: user type
+  # : root user
+  $ : normal user
+
+
+  windows               Linux
+  files                 files
+  Folders               Directory
+  Admin                 root user/super user
+  software              package
+
+  1. sudo su - : (Super User DO) (Switch User) /  sudo -i
+  ---> access root account
+  syntax: sudo su -
+
+  2. man man : manual
+  --> display manual page
+  syntax: man man
+
+  3. pwd: Present Working Directory
+  --> disply current working directory
+  syntax: pwd
+  
+  4. ls : List
+  --> used to display current dircetory/folder contents
+  i] syntax: ls
+  ii] syntax: ls <dir_name>
+  --> to checkout specific dir contents
+  eg:  ls /etc
+
+  5. clear:
+  --> to clear screen
+  syntax: clear
+  OR use ctrl+l
+
+  6. mkdir: Make Directory
+  --> used to create directory
+  i] syntax: mkdir <folder_name>
+  eg:  mkdir demo
+
+  ii] syntax: mkdir <folder1> <folder2> <folder3>
+  --> used to create multiple folder
+  eg: mkdir test folder1 folder2
+
+  iii] syntax: mkdir -p <parent/child>
+  --> used to create nested directories
+  eg: mkdir -p env/test
+
+  7. cd : Change Directory
+  --> used to move between directories
+  syntax: cd <folder_name>
+  eg: cd env
+
+  ii] syntax: cd ..
+  --> takes you to previous directory
+
+  8.  rmdir:
+  --> to delete empty directory
+  syntax: rmdir <dir_name>
+  eg: rmdir demo
+  syntax: rmdir <dir1> <dir2>
+  eg: rmdir folder1 folder2
+
+  9. rm -rf:
+  --> used to delete non empty directory
+  syntax: rm -rf <dir_name>
+  here,
+  rm stands for remove
+  -r stands for recursive
+  -f stands for forecfully
+
+-r tells rm to recursively delete the directory and all its contents
+"recursive means that the command will operate on a directory and all of its sub directories and files"
+eg: rm -rf 
+
+10. touch:
+--> used to create empty file.
+syntax: touch <filename>
+eg: touch test.txt
+
+11. cat > <file_name>:
+--> create file and add contents into file.
+syntax: cat > <file_name>
+eg: cat >test
+"use ctrl+d to save and exit"
+
+12. cat :
+--> to display file contents
+syntax: cat <file_name>
+eg: cat file100
+
+
+
+
+
+
+
