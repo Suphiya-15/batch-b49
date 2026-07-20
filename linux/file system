@@ -1,0 +1,25 @@
+
+**Linux File System**
+
+      Windows                                            Linux
+      C:\                                                 /
+
+      configuration files are
+      stored in 
+      c:\windows                                          /etc
+
+      home directory for user
+      c:\users                                            /home
+
+      installed software/application
+      files stored in c:\program file                     /usr (Unix System Resource)
+                                                          OR
+                                                          /opt
+
+     temp files are c:\temp                               /tmp
+
+---------------------------------------------------------------------------------------
+
+7. /boot : stored bootloader files
+POST method: Power On Self Test
+
