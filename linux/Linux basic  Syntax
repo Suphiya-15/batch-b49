@@ -97,6 +97,60 @@ eg: cat >test
 syntax: cat <file_name>
 eg: cat file100
 
+13. cp : Copy
+--> used to copy file
+syntax: cp <source_file> <destination>
+eg: cp demo.txt folder1
+
+14. cp -r :
+--> used to copy dircetory
+syntax: cp -r <source_folder> <destination_folder>
+eg: cp -r folder1 folder2
+
+15. mv : move
+--> used to move files/dirctory
+syntax: mv <source> <destination_folder>
+eg: mv demo.txt folder2
+
+16. wc: Word Count
+--> used to display no of lines, word count and character count
+syntax: wc <file_name>
+eg: wc demo.txt
+
+17. head: 
+--> to display first few(10 lines) lines of files.
+syntax: head <file_name>
+eg: head demo.txt
+syntax: head -n <file_name>
+--> to display n lines of file
+eg: head -5 demo.txt
+
+18. tail:
+--> to display last few lines(10 lines) of file.
+syntax: tail <file_name>
+eg: tail demo.txt
+
+19. sort:
+-->used to sort file
+syntax: sort <file_name>
+eg: sort demo.txt
+
+20. uniq:
+--> used to delete all adjacent duplicate lines.
+syntax: uniq <file_name>
+eg: uniq demo.txt
+
+sort file100 | uniq
+
+| = pipe
+--> it is used to connect the output of one command to the input of another command
+eg: command1 | command2
+--> instaed of displaying the output of command1 on the screen, linux passes it directly to
+the command2
+
+
+
+
 
 
 
