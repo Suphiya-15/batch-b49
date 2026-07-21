@@ -23,3 +23,20 @@
 7. /boot : stored bootloader files
 POST method: Power On Self Test
 
+8. /root : home directory of root user
+
+9. /dev : Device files
+
+10. /lib : contains essential libraries
+
+11. /media : Automatically mounts removable devices.
+eg: USB, external HD, DVD
+
+12. /mnt : used for tem manual mounting
+
+13. /var : system logs /var/logs
+
+14. /srv : service data info about web server, FTP
+
+
+

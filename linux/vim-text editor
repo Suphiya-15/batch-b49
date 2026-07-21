@@ -1,0 +1,58 @@
+                               **VIM**
+
+Text editor:
+--> it is a software application used to create, view and modify text files.
+eg: VI, VIM, Atom, Nano, Kate
+
+VI??
+--> VI stands for Visual Interface
+
+VIM??
+--> VIM stands for Vi IMproved
+-it is advanced version of VI with more features
+
+**VIM modes:
+1. Normal Mode:
+--> this is default mode. use 'esc' to switch to normal mode.
+--> you can not type or edit text in this mode only we can perform operations here.
+
+2. Insert Mode:
+--> this mode is used to type or edit text.
+--> use 'i' to enter in insert mode
+
+3. Command Line/ execute Mode:
+--> this mode is used to execute commands such as saving,quttting, searching or replacing text.
+--> use ':' to type command
+
+4. Visual Mode
+--> a mode that provides additional option to select text.
+--> use 'v' to enter in visual mode.
+
+**syntax to open file**
+vim <file_name>
+vim demo.txt
+
+**Saving and quitting**
+1. saving a file= :w and press enter
+2. exiting vim= :q and press enter
+3. saving and quitting= :wq and press enter
+4. :set nu = to display line numbers
+5. :set nonu = to hide line numbers
+
+**cursor movment shortcuts**
+h = move left
+j = move down
+k = move up
+l = move right
+   OR
+Arrow keys
+
+HW:
+
+gg = 
+shift +g = 
+shift +h =
+shift +m = 
+shift +l =
+<n>gg =
+15gg
