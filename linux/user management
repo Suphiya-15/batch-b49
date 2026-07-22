@@ -1,0 +1,19 @@
+                            **USER management**
+
+**Types of users in linux:
+1. Root user:
+--> root user is a super user in system, who has all access pass to the system functionality.
+
+2. Standard user:
+--> standrd users are those users which are created by root user. 
+-they have limited permissions compared to the root user.
+
+3. system user:
+--> system users are the users account created by the system rather than root user
+who used to run background processes and services
+
+
+adduser/useradd  <user_name>
+--> this command is used to create standard user
+eg: adduser amit
+

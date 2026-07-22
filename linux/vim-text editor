@@ -49,10 +49,70 @@ Arrow keys
 
 HW:
 
-gg = 
-shift +g = 
-shift +h =
-shift +m = 
-shift +l =
-<n>gg =
-15gg
+gg = move cursor to the begginning of the file
+shift +g = move cursor to the last line of the file
+shift +h =move cursor to the top of the screen
+shift +m = move curesor to the middle of the screen
+shift +l =move cursor to the bottom of the screen
+<n>gg =move cursor to the nth line
+15gg =move cursor to the 15th line of file
+
+**Search and replace**
+1. Forward search: (Top to bottom)
+syntax: /word
+eg: /AWS
+
+press 'n' for the next occurance of the search word
+
+2. Backword search: (bottom to top)
+syntax: ?word
+eg: ?AWS
+
+Replace:
+syntax= :%s/word1/word2/g
+--> this command is used to replace word1 with word2 globally.
+eg= :%s/AWS/Microsoft Azure/g
+
+hw:
+1. current occurance replace
+2. replace single occurance defined on number line
+
+**undo and redo**
+u = undo last changes
+ctrl+r = to redo changes
+
+**Delete, cut, copy and paste**
+
+dd = delete current line
+<n>dd = delete n lines from the current line
+5dd = delete 5 lines 
+dw = delete a word
+<n>dw = delete n words
+
+cc = cut the current line
+<n>cc = cut n lines
+cw = cut the word
+<n>cw = cut m words
+
+yy = copy the current line
+<n>yy = copy n lines
+yw = copy word
+<n>yw = copy n words
+
+p = paste cut/copied line
+<n>p = paste n times
+
+**Visual Mode**
+u = Change the visually selected text to UPPERCASE
+shift+u = Change the visually selected text to lowercase
+~ = invert the case of visually selected text(lowecase become upeercase and vice versa) 
+
+HW
+i =
+shift+i =
+a =
+shift+a =
+o =
+shift+o=
+r=
+shift+r=
