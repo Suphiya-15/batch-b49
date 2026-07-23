@@ -12,8 +12,59 @@
 --> system users are the users account created by the system rather than root user
 who used to run background processes and services
 
+docker
+mysql
+
+
 
 adduser/useradd  <user_name>
 --> this command is used to create standard user
 eg: adduser amit
+
+/etc/passwd : display user information
+/etc/shadow : display user password information
+
+seema  :  x  :  1001  :  1001  :   :  /home/seema  : /bin/bash
+  1       2       3       4      5         6            7
+
+1 : user name
+2 : password
+3 : user ID
+4 : group ID
+5 : user other information
+6 : user home directory
+7 : shell type
+
+
+usermod -u <new-uid> <user-name>
+--> to change user's uid
+usermod -u 7001 seema
+
+usermod -g <new-gid> <user_name>
+--> to change user's gid
+usermod -g 1001 seema
+
+usermod -c "comments" <user_name>
+--> to update user information
+usermod -c "seema patil, Pune, 0123456789" seema
+
+usermod -d <new-home-dir> <user_name>
+--> to change user's home directory
+usermod -d /mnt seema
+
+usermod -s <new-shell_type> <user_name>
+--> to chnage shell type
+usermod -s /bin/sh seema
+
+usermod -l <new_name> <old_user_name>
+--> to rename user
+usermod -l seema seeema
+
+usermod -L <user_name>
+-> to lock user account
+usemod -L seema
+
+usermod -U <user_name>
+--> to unlock user account
+usermod -U seema
 
