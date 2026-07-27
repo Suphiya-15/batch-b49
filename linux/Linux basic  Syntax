@@ -108,9 +108,15 @@ syntax: cp -r <source_folder> <destination_folder>
 eg: cp -r folder1 folder2
 
 15. mv : move
+--> mv has two use cases:
+i] move a file
 --> used to move files/dirctory
 syntax: mv <source> <destination_folder>
 eg: mv demo.txt folder2
+
+ii] mv <old_file name> <new_file name>
+--> to rename file
+eg: mv demo.txt test.txt
 
 16. wc: Word Count
 --> used to display no of lines, word count and character count
@@ -148,6 +154,10 @@ eg: command1 | command2
 --> instaed of displaying the output of command1 on the screen, linux passes it directly to
 the command2
 
+21. rm : remove
+--> this command is used to remove file
+syntax: rm <file_name>
+eg: rm file.txt
 
 
 
