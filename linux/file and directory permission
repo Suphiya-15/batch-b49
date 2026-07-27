@@ -1,0 +1,126 @@
+                            **File and Directory Permission**
+
+
+ll <file_name>
+ls -l <file_name>
+ls -ltr <file_name>
+------> to display file Permission
+ll demo.txt
+ls -l demo.txt
+ls -ltr demo.txt
+
+-  rw-  r--  r--   1   root   root   0   Jul 27 22:42   demo.txt
+1   2   3    4     5    6      7     8      9             10
+
+1 : File type
+2 : Owners permission
+3 : Group Permission
+4 : others permission
+5 : link count
+6 : file owner name
+7 : group name
+8 : file size
+9 : file creation date and time
+10 : file name
+
+
+rwx
+r = read
+w = write
+x = execute 
+
+chown <user_name> <file_name>
+--> to change file owner
+chown seema demo.txt
+
+chgrp <group_name> <file_name>
+--> to change group name
+chgrp aws demo.txt
+
+1. symbolic method
+2. Number presentation method
+
+1. symbolic method:
+symbols: + , - , =
+
+owner (user) = u
+group = g
+other = o
+all = a /ugo 
+ug go uo 
+
+chmod  u-r , u-w , u-x, u-rw , u-wx u-rwx..
+       u+r , u+w , u+x, u+rw, u+wx, u+rwx ...
+       u=rwx, u=x ......  <file_name>
+
+       g
+
+       o
+
+       a
+
+       ug
+
+       go
+
+       uo
+
+
+       permission                file                      directory
+        
+         read = r           read file contents           read directory contents                 
+                                  (cat)                        (ls)
+
+         write = w          edit, rename, delete         create,delete,rename or move files,         
+                             file conetnts                  (touch,cat,mv,rm)
+                               (vim,rm,mv)
+
+         execute= x         execute a file               enter the directory
+                                                                (cd)
+
+2. number presentation method:
+read = r = 4
+write = w = 2
+execute = x = 1
+
+r-xrw-r--
+
+owner: r-x
+     : 4+0+1 : 5
+
+group: rw-
+     : 4+2+0 : 6
+
+others: r--
+      :4+0+0 : 4
+eg:
+      chmod 5 6 4 demo.txt
+            u g o
+
+      chmod 000 demo.txt
+      ---------
+
+      chmod 444 demo.txt
+      r--r--r--
+
+      chmod 754 demo.txt
+      rwxr-xr--
+
+      chmod 600 demo.txt
+      rw-------
+
+      chmod 777 demo.txt
+      rwxrwxrwx
+
+      chmod 433 demo.txt
+
+      chmod u+x demo.txt
+
+      chmod 4 0 0 demo.txt
+            u g o
+
+ r = 4
+ w = 2
+ x = 1
+            test.txt ---> chmod  5 1 3 test.txt
+
