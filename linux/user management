@@ -68,3 +68,65 @@ usermod -U <user_name>
 --> to unlock user account
 usermod -U seema
 
+passwd <user_name>
+--> used to change password of user
+eg: passwd seema
+
+reserved UID's:
+0 = root
+1 - 999 = system users
+1000+ = standard users
+
+userdel <user_name>
+--> to delete user from system
+userdel seema
+
+
+                             **group management**
+
+groupadd <group_name>
+--> to create group
+groupadd aws
+
+groupdel <group_name>
+--> to delete group
+groupdel aws
+
+/etc/group : to display group information
+ 
+ aws  :  x  :  5003  :
+  1      2      3       4
+
+  1 : group name
+  2 : group password
+  3 : group id
+  4 : group members
+
+  group types:
+  1. primary group
+  2. secondary group
+
+  usermod -aG <group_name> <user_name>
+  --> to add single user to the group
+  usermod -aG aws  seema
+
+  gpasswd -M <user1>,<user2>,<user3>... <group_name>
+  --> to add multiple users into group
+  gpasswd -M seema,mena,atul aws
+
+  gpasswd -d <user_name> <group_name>
+  --> to delete user from group
+  gpasswd -d seema aws
+
+  groupmod -n <new_group_name> <old_group_name>
+  --> to rename group
+  groupmod -n devops aws
+ 
+
+ 
+
+
+
+
+
+
