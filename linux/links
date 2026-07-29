@@ -1,0 +1,52 @@
+                            **Links**
+
+Link count:
+--> A link in linux shows how many names/files points to the same file or directory.
+--> link count of a file tells the total numbers of links a file has.
+
+*types of links:
+1. hard link
+2. soft link
+
+1. Hard link: (A diffrent name for the same file)
+1. A hard link refers to the same file contents as a original file.
+syntax:
+          ln  original_file  link_name
+
+2. hard link file is assigened the same inode value as the original file.
+3. removing link just decrese the link count but does not affects other links or original file
+4. deleting original file will not affect other links or data. the data is deleted only when the last link is removed.
+
+2. soft link:
+1.it is a special file that stores the path to another file.
+(it behaves like a windows shortcut)
+syntax:
+        ln -s original file  link_name
+2. soft links inode value is different from original files inode value.
+3. removing any soft link does not affect other links or data
+4. deleting original file the link becomes 'dangling link' which points to the non existing file.
+
+inode:
+--> an inode is a data structure that store metadata about file.
+--> it contains file owenr, group, permission, size, time stamps etc.
+--> it does not store file name and its contents.
+--> every file is assiged a unique number within a file system.
+syntax: 
+      ls -li <file_name>
+
+
+
+**file types in linux:
+1. regular file: (-)
+2. directory file: (d)
+3. special files
+- charcter file: (c)
+- block file: (b)
+- pipe file: (p)
+- link file: (l)
+- socket file: (s)
+
+file <file_name>
+--> to display file type
+--> the output of this command displays the file type
+eg: file  demo 
