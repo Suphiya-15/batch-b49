@@ -1,0 +1,57 @@
+                            **Cronjobs**
+
+cron : background scheduler
+crontab: cron table
+--> it stores all schedule jobs.
+
+---> A cron job is an automatic task that linux runs at a scheduled time.
+
+synatx:
+* * * * *  <command>
+1 2 3 4 5
+
+1 : Minute(0-59)
+2 : Hour (0-23)
+3 : Day of month(1-31)
+4 : Month(1-12)
+5 : Day of week (0-7) : 0 or 7 = sunday
+
+30 10 * * * touch demo.txt
+
+5 8 * * 7 mkdir demo
+
+crontab -e : (edit)
+--> to set or edit cron jobs/tasks
+
+crontab -l : (list)
+--> to list out all cron jobs
+
+crontab -r : (remove)
+--> to remove all jobs
+
+**fIND COMMAND**
+
+find  <starting_dir>  <condition>  <action>
+here,
+starting_dir: where to search eg: / = whole system , /etc, /home
+condition: what to search eg: -name, -perm
+action: what to do with the result eg: delete
+
+eg:
+
+find / -name cloud.txt 
+
+conditions:
+1. by name: -name
+2. by permission: -perm
+3. by size: -size
+4. by uid
+5. by gid
+6. by user
+7. by group
+8. by modification time: -mtime
+eg:
+
+find / -mtime -7 
+find / -mtime 7 
+find / -mtime +30 
