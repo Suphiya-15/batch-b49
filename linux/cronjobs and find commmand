@@ -55,3 +55,10 @@ eg:
 find / -mtime -7 
 find / -mtime 7 
 find / -mtime +30 
+
+
+$200 --> 19K
+$100 --> 8k ----> 180days--> 6 months
+
+emandate--> 15k 
+

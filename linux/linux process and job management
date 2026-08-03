@@ -1,0 +1,68 @@
+
+**process:**
+--> A process is a program in execution
+--> A process ia an instance of a program that is being executed by OS
+
+**Types of Process:**
+1. Foreground process
+2. Background Process
+3. Daemon Process
+
+1. Foreground process is a process that runs in front of user and occupies the 
+terminal until it finishes.
+
+2. Background process runs behind the scenes, allowing you to continue using the 
+terminal while it executes.
+
+3. Daemon process is a special background process that runs continuously to provide
+ service without requring user interaction.
+
+**Sarting a process**
+eg: sleep 10
+
+**Running a process in background**
+--> use the & symbol to start a process in background.
+eg: sleep 100 &
+
+**ctrl+z is used to stop the process**
+
+--> bg and fg both are the commands can be used to run stopped processes but fg will bring it to the foreground and bg will bring it to the background
+
+jobs:
+--> the jobs command displays background jobs from the current shell.
+syntax: jobs
+
+ps:
+--> list all the processes for the current user
+when to use --> to see what you are currentlu running
+
+ps -e:
+--> view all system processes
+when to use --> to see every running process
+
+ps -aux:
+--> view all processes with detailed information
+when to use --> monitoring and troubleshooting
+
+top :
+--> display a real time view of system processes and their resource usage.
+when to use --> real time monitoing
+
+--> process state
+1. R = Running
+2. S = Sleeping
+3. T = Stopped
+4. Z = Zombie
+--> process has finished but its parent has not yet collected its exit status
+
+kill:
+--> used to kill/delete/remove a process
+syntax: kill -9 [pid]
+eg: kill -9 1452
+
+
+
+
+
+
+
