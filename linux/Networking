@@ -1,0 +1,57 @@
+                                 **Networking**
+
+--> A Network is a group of two or more devices connected togather so they can communicate.
+
+-types of networks:
+1. LAN -> Local Area Network
+2. MAN -> Metropolitan Area Network
+3. WAN -> Wide Area Network eg: Internet
+
+-Network Devices:
+1. Hub
+2. Switch
+3. Router
+4. Gateways
+5. Firewall
+6. Modem
+7. Bridge
+
+-Protocols:
+--> A protocol is a set of rules that devices follow to communicate over a network.
+eg: HTTP, HTTPS, SSH, RDP, FTP, SMTP, DHCP, IP, TCP, UDP
+
+-IP address:
+--> An IP address is a unique numrical address assigened to every device on a network.
+
+NIC : Network Interface Card
+
+**Linux basic Networking command**
+
+1. hostname:
+--> The hostname command displays the name of your computer in network.
+syntax: hostname
+
+2. ping:
+--> the ping command checks whether another server is reachable over a network.
+syntax: ping <destination>
+eg: ping  google.com
+
+3. ifconfig: interface Configurator
+--> this command is used to manage the computer's network configuration.
+syntax: ifconfig --> older command
+
+ip addr
+ip address show
+ip address
+
+4. curl: Client URL
+--> this command is used to send or receive data from server.
+syntax: curl <destination>
+eg: curl google.com
+
+5. wget: Web GET
+--> this command is used to download file from the internet.
+syntax: wget <URL>
+eg: wget https://example.com/file.zip
+
+

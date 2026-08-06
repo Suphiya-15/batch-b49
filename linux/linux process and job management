@@ -60,6 +60,30 @@ kill:
 syntax: kill -9 [pid]
 eg: kill -9 1452
 
+**Process Priority**
+--> Nice and renice value
+
+-20 : Highest priority 
++20 : Lowest priority
+
+sleep 60  -15
+sleep 100  5
+
+-process priority is a value that tells the linux scheduler how important a process is compared to other
+running processes.
+nice value:
+--> it is used to set the priority
+syntax: nice -n <priority-number> <command>
+eg: nice -n -10 sleep 60
+
+renice value:
+--> this command is used to change the process priority
+syntax: renice -n <priority-number> <pid>
+eg: renice -n 5 1250
+
+
+
+
 
 
 
