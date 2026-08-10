@@ -1,0 +1,31 @@
+1. df -h : 
+--> check Disk/Filesystem Usgae
+--> -h means human readbale (MB,GB)
+--> shows disk usage of mounted filesystem.
+
+2. free -h:
+--> to checkout RAM/Memory 
+
+3. lscpu :
+--> shows CPU hardware information
+
+4. uptime:
+--> shows 
+--> current time
+--> how long the server has been running
+--> number of logged in users
+--> CPU avg load 
+
+**Package Manager** 
+--> A Package manager is a tool that installs, update amd remove packages.
+eg: yum, APT, zypper, dnf, brew
+
+yum: RHEL, CentOS, Fedora, Amazon Linux
+yum install httpd
+
+apt: ubuntu, Debian
+apt install apache2
+
+zypper: SUSE
+Brew: MacOS
+

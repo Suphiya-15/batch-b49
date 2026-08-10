@@ -1,0 +1,48 @@
+1. what is linux? explain features?
+2. what is linux kernel?
+3. what is linux shell?
+4. what is inode
+5. how do you check active processes in linux?
+6. how do you kill a process
+7. what is the root user in linux?
+8. what is process?
+9. what is task scheduler?
+10. what is ls -ltr?
+11. how to find files larger than 100MB?
+--> find / -size +100M
+12. how to find files modified in the last 24 hours
+--> find / -mtime -1
+13. how do you indentify the process consuming the most CPU?
+14. how do you check memory usage:
+--> free -h
+15. how do you check disk usage?
+--> df -h
+16. cd vs pwd
+17. How do you change file ownership?
+18. how do you check network connectivity?
+19. /etc/passwd
+20. what is tail command?
+21. Explain vim
+22. Production server reports 100% disk usage. what will you do?
+
+rw-r-xr-- 
+
+mkdir -p grandparent/parent/child
+
+rm -rf   addduser                   rwxr-xrw- : 756
+/etc/group
+/etc/shells                  
+
+chmod o+w file_name
+755
+
+rw-rwxr--
+-c
+-z
+-perm
+wc 
+uniq
+ps/top
+&
+fg 
+lscpu

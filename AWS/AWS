@@ -1,0 +1,48 @@
+                                         AWS
+                                    Amazon Web Service
+
+AWS is a cloud computing platform provided by Amazon that offers various IT resources and service 
+over the internet on a pay as you go basis.
+
+AWS white papers
+
+**AWS Global Infrastructure**
+1. Region:
+--> an AWS region is a sepearte geographical area in the world that containes one or more data centers.
+eg: ap-south-1, us-east-1
+
+2. Availabilty zone: 
+--> An AZ is an isolated location within an AWS region.
+--> each AZ is designed with independant infrastructure.
+--> eg: power, cooling, networking
+--> the goal is to reduce the chances that a failure in one AZ affects another AZ.
+
+
+                                         EC2
+                                    Elastic Compute Cloud
+                                          --------------> Compute
+
+    --> this service is used to create virtual machine in AWS
+    --> Virtual machine / VM / Server / Node / machine / instnace
+
+**Steps to create instance**:
+1. tags: Metadata about server
+
+2. AMI: Amazon MAchine Image : (selecting OS)
+--> AMI is a template which consist of OS and other software applications which are requied to launch your instamce.
+
+3. Instance type: (RAM + CPU)
+
+4. Firewall: Security group
+--> A security group is a set of firewall rules that control the traffic for your instance
+
+5. Storage:  HDD and SSD
+
+6. Key pair: 
+--> You can use a key pair to securely connect to your instance
+--> key pair: 2 kays: 1. public kay ---> kept with AWS
+                      2. private key ---> Downloaded by user
+
+c.w --> create amazon linux instance --> connect it --> delete it
+h.w --> craete ubuntu instance --> connect it --> delete it
+2> create windows instance 
