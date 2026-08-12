@@ -25,7 +25,8 @@ eg: ap-south-1, us-east-1
     --> this service is used to create virtual machine in AWS
     --> Virtual machine / VM / Server / Node / machine / instnace
 
-**Steps to create instance**:
+
+Demo:1 **Steps to create instance**:
 1. tags: Metadata about server
 
 2. AMI: Amazon MAchine Image : (selecting OS)
@@ -46,3 +47,85 @@ eg: ap-south-1, us-east-1
 c.w --> create amazon linux instance --> connect it --> delete it
 h.w --> craete ubuntu instance --> connect it --> delete it
 2> create windows instance 
+
+
+1. **Security Group** :
+1. Inbound rule : incoming traffic
+2. Outbound rule : outgoing traffic
+
+SSH protocol: Secure SHell:
+--> this protocol is used to connect linux instance remotely.
+--> SSH works on port no 22
+
+RDP protocol: Remote Desktop Protocol
+--> this protocol is used to connect windows instance remotely.
+--> RDP works on port no 3389
+
+demo 2: how to connect windows instance
+
+1. create windows instance
+   ----> allow RDP protocol
+2. click connact
+3. go to RDP tab
+4. download remote desktop shortcut file
+5. get windows password
+6. upload private key
+7. decrypt password
+8. copy password --->(save password)
+9. open RDP shortcut file
+10. connect
+11. paste password on it
+12. ok
+13. yes
+
+
+**Status Check**:
+-->  It is a health check performed by AWS to make sure your EC2 instance and the AWS infrastructure are working properly.
+
+two main status check:
+1. system status check:
+--> AWS infra
+    ---> AWS physical host
+    ---> networking
+    ---> power
+    ---> Hypervisor
+    ---> AWS hardware
+
+2. instance status check
+--> instance itself
+    ---> OS not responding
+    ---> kernel problems
+    --> network issue
+
+3. EBS reachability
+
+    2/2 check pass : all ok
+    1/2 check pass: system issue --> stop and start the instance
+    0/2 check pass: system + instance --> reboot instance
+
+*Web Server*:
+--> a web server is a machine which stores web contents.
+--> A web server is a server that receives HTTP/HTTPS request from clients and return web contents.
+eg: Apache HTTP server, Nginx, IIS
+
+HTTP: HyperText Transfer Protocol:
+--> HTTP is a communication protocol used between client and web server.
+--> works on port no 80
+
+HTTPS: Secure : 443
+
+**Demo 3: Host Website on ec2 instance
+1. create linux instance
+   ----> open http, https protocols
+2. connect
+sudo su -
+yum install httpd -y
+systemctl start httpd
+systemctl status httpd
+echo "<h1>comments</h1>" >/var/www/html/index.html
+
+*HW*: nginx web server
+hint--> /usr/share/nginx/html
+
+
+
