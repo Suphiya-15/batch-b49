@@ -1,0 +1,17 @@
+                                     EBS
+                            Elastic Block Storage
+                                     -------------> Storage
+
+    * --> EBS is a virtual hard drive that you attch to an EC2 instance to
+    store the OS, application and data
+
+    --> network attched virtual drive
+
+    --> EBS volume types
+
+    Throughput:
+    --> amount of data trasferred per second
+    mb/s
+    IOPS: Input Output operations Per Second
+    --> how many read/write operations the storage can perfrom in one second.
+    

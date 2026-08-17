@@ -127,5 +127,39 @@ echo "<h1>comments</h1>" >/var/www/html/index.html
 *HW*: nginx web server
 hint--> /usr/share/nginx/html
 
+**Pricing options of EC2**:
+1. On-demand Instance:
+--> pay for what you use:
+1. Linux or Windows: billing per second after first minute. 72sec: 1 min 12 sec
+2. All other OS : billing per hour
+
+--> Has the highest cost but no upfront payment
+--> No long term commitment
+--> Recommended for short term workload
+
+2. Reserved Instance:
+--> upto 72% discount compared to on demand
+--> Reservation period: 1 year or 3 years
+--> Payment Options: 
+       1. No upfront cost
+       2. Partial upfront
+       3. Full upfront
+
+3. Spot Instance:
+ ---> upto 90% discount compared to ondemand
+ --> spot instances are unused AWS ec2 capacity
+
+
+4. Dedicated Instance:
+--> A physical server with EC2 instance capacity fully dedicated to your use.
+--> most expensive option
+
+5. EC2 Saving plans:
+--> commit to a certain type of usage ($10/hour for 1 year or 3 years)
+
+6. Capacity Reservation:
+--> Reserve on demand instances capacityin a specific AZ for any duration.
+
+
 
 
