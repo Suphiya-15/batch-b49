@@ -15,3 +15,73 @@
     IOPS: Input Output operations Per Second
     --> how many read/write operations the storage can perfrom in one second.
     
+
+  lslbk : List Block Device
+  --> used to list out all the block devices in a tree like format.
+  syntax:  lsblk
+
+
+  fdisk = Formatted Disk
+  --> used to create, delete and managing disk partitions on a system
+  syntax:  fdisk  <disk_name>
+  eg: fdisk /dev/nvme1n1
+
+
+  mkfs = make file system
+  --> this command is used to create a new file system on a specific device such as hard disk partition
+  syntax:  mkfs.ext4 <partition_name>
+  eg: mkfs.ext4 /dev/nvme1n1p1
+
+  ---> file system is the structure/organization that allows an OS to store and manage files and directories on a storage device.
+  ---> ext4 is a filesystem type.
+  ext4 : Fourth EXtended Filesystem
+
+  **demo:__ Attach Volume, create partition and mount file system**
+
+  1. create one linux instance
+  2. create another volume
+   ---> attched to instance
+  3. connect
+  sudo su -
+  lsblk
+  fdisk <disk_name>
+  type m
+  type n
+  partition type:
+  type p
+  partition number: type 1
+  first sector:
+  second sector: +4G
+  type w
+
+  lsblk
+
+  mkfs.ext4 <partition_name>
+  mount <partition_name> /mnt
+
+
+  **to extend root volume partition**
+  1. create instance
+  2. modify volume --> increase size
+  3. connect
+  sudo su -
+  lsblk
+  growpart <partition_name>    ----> to grows the partition
+  df -Th
+  xfs_growfs / ----> to extend xfs filesystem   
+
+  ext4:
+  resize2fs     ----> to extend ext4 filesystem
+
+
+
+                                    **Snapshot**
+
+    --> snapshots are point in time images of EBS
+    --> EBS = 5000/account
+    --> Snapshot = 10000/account
+    
+
+
+
+
