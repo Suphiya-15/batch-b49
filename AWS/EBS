@@ -75,12 +75,21 @@
 
 
 
+
                                     **Snapshot**
 
     --> snapshots are point in time images of EBS
     --> EBS = 5000/account
     --> Snapshot = 10000/account
-    
+
+    --> to migrate an EBS from one AZ to another then create snapshot and create volume 
+    from the snapshot in the intended AZ.
+    --> EBS snapshot is an incremental backup.
+    --> the first backup of a volume backups all the data.
+    --> every next backup copies only a block of data that has changed since the last snapshot.
+     
+
+
 
 
 

@@ -1,0 +1,29 @@
+                                          EFS
+                                  Elastic File system
+                                            ---------> Storage
+EBS vs EFS
+
+---> EFS provides the shared file storage.
+--> only work with linux OS
+--> windows: Windows FSx
+
+AWS -----------> JSON and YAML         IaC --> Terraform
+
+
+EFS Demo
+1. create 2 linux instances
+-----> open port no 2049 --> NFS
+2. create efs file system
+---> select mount tagerts
+---> select security group
+3. connect both instances
+sudo su -
+yum install amazon-efs-utils -y
+mkdir efs
+4. go to efs select attch option 
+5. select mount helper command
+6. paste command on both instances
+7. cd efs
+8. check out results
+
+                        

@@ -1,0 +1,94 @@
+IP address:
+---> it is a unique/ logical address given to a device on a network
+---> eg: 198.178.20.45
+---> ip address versions:
+IPv4 : Internet Protocol Version 4
+IPv6 : Internet Protocol Version 6
+
+IPv4:
+--> IPv4 uses a 32 bit address
+
+
+192   .   168   .    1    .    10
+octet    octet     octet     octet
+ 8 bit  +   8 bit  +   8 bit  +   8 bit  = 32 bits
+
+ 00000000 = 0
+ 11111111 = 255
+
+
+128  64  32  16  8  4  2  1
+  1   1   1  1   1  1  1  1  = 255
+  0   0   0  0   0  0  0  0  = 0
+  1   1   0  0   0  0  0  0  = 192
+
+  IPv4 Classes:
+  
+  Class A : 0 to 126 : 1.0.0.0 to 126.255.255.255
+  Class B : 128 to 191 : 128.0.0.0 to 191.255.255.255
+  Class C : 192 to 223 : 192.0.0.0 to 223.255.255.255 
+  Class D : 224 to 239
+  CLass E : 240 to 255
+
+   
+                            CIDR
+                Classless Inter Domain Routing
+        
+--> it is set of IP standards that are used to allocate IP addresses.
+syntax:
+            0.0.0.0/n 
+        here,
+        n declares the network size
+
+2 ^ 0 = 1
+2 ^ 1 = 2
+2 ^ 2 = 4
+2 ^ 3 = 8
+2 ^ 4 = 16
+2 ^ 5 = 32
+2 ^ 6 = 64
+2 ^ 7 = 128
+2 ^ 8 = 256
+2 ^ 9 = 512
+2 ^ 10 = 1024
+
+1. 512 servers/ip address : 
+-----> 10.0.0.0/___
+
+step 1: 2 ^ __ = 512  = 9
+
+step 2: 32 - 9 = 23
+
+---> 10.0.0.0/23
+
+2. 64 servers: 
+------> 10.0.0.0/__ : 26
+
+3. 120 servers: /25
+
+----------------------------------------------------------------------------
+
+1. 10.0.0.0/28
+--> 32 - 28 = 4
+--> 2 ^ 4 = 16
+----> 16 ip address
+
+2. 10.0.0.0/26
+--> 64
+
+3. 10.0.0.0/24
+
+-------------------------------------------------------------------------------
+
+/16 to /28
+
+/28 : 16 ip address
+/16 : 32-16 = 16
+      2 ^ 16 = 65536 ip address
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+                                       VPC
+                             Virtual Private Cloud
+
+--> VPC is a virtual network or data center for one client
+--> it is logically isolated from other virtual betwork in the AWWS Cloud
+--> once we created VPC, DHCP, security group and NACL will be automatically created
+DHCP: Dynamic Host Configuration Protocol
+
+--> VPC types:
+1. Default VPC
+2. Custom VPC
+
+--> up to 5 VPC you can create per region and 200 subnets in 1 VPC
+--> once the VPC is created, ypu can not chnaged its CIDR block
+--> if you need differnt CIDR size, then create new VPC
+--> different subnet within a VPC can not overlap
+
+--> steps to create VPC:
+1. create VPC  
+    -----> 1. VPC name
+    -----> 2. VPC CIDR --> 10.0.0.0/16 ---> 65536
+
+2. create subnet
+--> subnet means sub network
+--> subnet is a range of an ip address
+--> subnetting --> is the process of dividing large network into smaller one
+--> why?? 
+    ---> can help to reduce the congesion
+    ---> better IP allocation
+    ---> better security
+
+-----------> 1. subnet name
+-----------> 2. Subnet CIDR --> 10.0.0.0/20
+
+3. Internet Gateway
+--> gateway is used to connect two different network
+--> An internet gateway is a virtual router that connects a VPC to the internet. 
+
+4. Route table
+----> to select subnet association
+----> enter routes
