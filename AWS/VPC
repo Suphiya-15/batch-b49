@@ -11,7 +11,7 @@ DHCP: Dynamic Host Configuration Protocol
 2. Custom VPC
 
 --> up to 5 VPC you can create per region and 200 subnets in 1 VPC
---> once the VPC is created, ypu can not chnaged its CIDR block
+--> once the VPC is created, you can not chnaged its CIDR block
 --> if you need differnt CIDR size, then create new VPC
 --> different subnet within a VPC can not overlap
 
@@ -32,6 +32,10 @@ DHCP: Dynamic Host Configuration Protocol
 -----------> 1. subnet name
 -----------> 2. Subnet CIDR --> 10.0.0.0/20
 
+--> types of subnet:
+1. Public Subnet
+2. Private Subnet
+
 3. Internet Gateway
 --> gateway is used to connect two different network
 --> An internet gateway is a virtual router that connects a VPC to the internet. 
@@ -39,3 +43,22 @@ DHCP: Dynamic Host Configuration Protocol
 4. Route table
 ----> to select subnet association
 ----> enter routes
+
+--> Jump server/basion  host
+--> NAT gateway
+
+VPC Peering:
+---> A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them privately.
+---> bash scripting:
+#!/bin/bash
+sudo su -
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>comment</h1>" >/var/www/html/index.html
+
+VPC Security:
+1. Security group                                        1. Encryption
+2. NACL : Network Access Control List                    2. Security Group
+                                                         3. NACL
+                                                         4. IAM
