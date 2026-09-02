@@ -45,9 +45,18 @@ DHCP: Dynamic Host Configuration Protocol
 ----> enter routes
 
 --> Jump server/basion  host
---> NAT gateway
+----> A Jump Server is an EC2 instance placed in a public subnet 
+that you use to connect to resources in a private subnet.
+----> You cannot directly SSH from the Internet to the private EC2 because it has no public IP. 
 
-VPC Peering:
+
+--> NAT gateway:
+----> A NAT Gateway is used when resources in a private subnet need to access the Internet,
+ while preventing the Internet from initiating connections directly to those private resources.
+----> A NAT Gateway itself needs Internet connectivity.
+So it is normally created in a public subnet and associated with an Elastic IP.
+
+** VPC Peering:
 ---> A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them privately.
 ---> bash scripting:
 #!/bin/bash
@@ -62,3 +71,19 @@ VPC Security:
 2. NACL : Network Access Control List                    2. Security Group
                                                          3. NACL
                                                          4. IAM
+
+IP addresses:
+1. Public IP Address:
+--> A public IP allows an EC2 instance to communicate with the Internet.
+--> This is very important. If you stop an EC2 instance and start it again,
+its public IPv4 address can change.
+
+2. Private IP Address:
+--> A private IP is an IP address used for communication inside your VPC/private network.
+--> By default, the primary private IPv4 address is persistent for the life of the EC2 instance.
+
+3. Elastic IP:
+--> An Elastic IP (EIP) is a static public IPv4 address that you allocate to your AWS account.
+--> Elastic IP does not normally change when you stop and start the EC2 instance.
+
+

@@ -1,0 +1,17 @@
+                                   Autoscaling
+
+--> Autoscaling is a service that automatically increase or decreses the number of ec2 instance
+   based on the application workload or demand
+
+--> it automatically adjust the capacity based on demand.
+
+--> types of Autoscaling:
+1. Horizontal scaling
+--> Horizontal scaling means adding or removing EC2 instances.
+--> Instead of making one server bigger, we create more servers.
+
+2. Vertical Scaling
+--> Vertical scaling means increasing or decreasing the size/capacity of an existing EC2 instance.
+--> Instead of adding more servers, we make the existing server more powerful.
+
+

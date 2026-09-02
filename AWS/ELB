@@ -1,0 +1,35 @@
+                                    ELB
+                            Elastic Load Balancer
+
+--> ELB automatically monitor and distribute incoming web traffic among the avaibale servers.
+
+--> types of ELB:
+1. Application LB:
+---> HTTP and HTTPS traffic 
+---> path based routing
+---> works on 7th layer of OSI model (Application layer) 
+
+2. Network LB:
+---> TCP, UDP Protocol
+---> handle million requests per second
+---> ultra low latency
+---> works on 4th layer of OSI model (Transport Layer)
+
+3. Gateway LB:
+---> third party security applience
+---> works on 3rd layer of OSI model (Networl Layer)
+
+4. Classic LB: prev gen
+
+** Target Group:
+--> A Target Group is a collection of backend resources where the Load Balancer sends client traffic.
+
+** Listners:
+--> A Listener is a process on the Load Balancer that checks for incoming connection requests on a specific protocol and port.
+
+
+
+
+amazon.com
+amazon.com/cloths --> s1
+amazon.com/laptop --> s2
