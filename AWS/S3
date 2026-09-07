@@ -1,0 +1,32 @@
+                                          S3
+                                Simple Storage Service
+                                          ---------> Storage
+    
+HW
+1. EBS vs EFS vs S3
+
+--> you can use s3 to store and retreive any amout of data at any time from anywhere using Internet.
+
+--> S3 is a object level storage 
+
+--> you can not use s3 as a root volume cz s3 is non bootable service 
+
+--> S3 has a distributed data store architecture where objects are stored in multiple location.
+(stored min 3 location within same region)
+
+--> durability: 99.999999999% --> 11 9's 
+--> availability: 99.9%
+
+--> Data is stored Bucket.
+
+--> Bucket is a container of object 
+
+--> we can not create nested Bucket. (bucket under bucket) 
+
+--> S3 bucket is region specific 
+
+--> you can have upto 100 buckets per account.(may expand on req)
+
+--> min and max object capapcity : 0 byte to 50TB
+
+
