@@ -1,0 +1,25 @@
+                                 SNS
+                            Simple Notification Service
+
+--> AWS SNS (Simple Notification Service) is a fully managed publish/subscribe messaging service from Amazon Web Services. It is used to send notifications and messages to multiple subscribers.
+
+**Main Concepts:
+1. Topic: A communication channel where messages are published.
+2. Publisher: An application or service that sends messages to an SNS topic.
+3. Subscriber: An endpoint that receives messages from the topic.
+4. Subscription: Connects a subscriber to an SNS topic.
+
+---> A publisher sends one message to a topic, and SNS delivers it to all subscribed endpoints.
+---> Supported Subscribers are: Amazon SQS, AWS Lambda, HTTP/HTTPS endpoints, Email / Email-JSON, SMS, Mobile push notifications
+
+** Important Features
+1. Pub/Sub messaging: One message can be delivered to many subscribers.
+2. Fan-out: SNS can distribute the same message to multiple services.
+3. Scalability: Handles large numbers of messages and subscribers.
+4. Integration: Works with many AWS services such as CloudWatch, S3, and Lambda.
+
+** Common Use Cases
+1. Application alerts and notifications
+2. Sending SMS/email notifications
+3. Distributing events to multiple applications
+4. Triggering AWS Lambda functions
