@@ -1,0 +1,42 @@
+                                    Route53
+                                      -------> Networking
+--> DNS works on 53
+
+DNS : Domain Name System
+---> DNS translates a human readable domain name into an IP addresss.
+eg: www.google.com ----> 198.164.98.27
+
+Route53:
+1. Domain Registration
+2. DNS management
+3. Routing policies
+4. Health Checks
+
+TLD: Top Level Domain
+--> TLD is the last part of a domain name.
+eg: .com, .into
+--> Two types of TLD:
+1. Generic TLD: gTLD
+---> .com , .net, .org, .edu, .gov
+
+2. Contry-code TLD: ccTLD
+---> .in, .uk, .us, .cn, .jp
+
+
+**Steps to Configure Route53:
+1. First you have to register domain name. (it can be buy from route53 or any other DNS registrar)
+2. Create Hosted Zone on route53.(this is done automatically if the name is resistered using route53)
+3. inside hosted zone you will need to create record set.
+
+Hosted Zone:
+--> hosted zone is a container for records.
+--> Types of Hosted Zone
+1. Public HZ:
+--> A public hosted zone determines how traffic is routed on the internet.
+2. Private HZ:
+--> A private hosted zone determines how traffic is routed within an Amazon VPC.
+
+
+--> for each public HZ that you create, amazon route53 automatically create two records:
+1. NS record: (Name Server record)
+2. SOA record: (Start Of Authority Record) --> Domain details

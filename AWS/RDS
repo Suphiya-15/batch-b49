@@ -1,0 +1,70 @@
+                                               RDS
+                                    Relational Database Service
+
+what is data??
+--> data means information.
+
+database?
+---> an organized collection of data that can be stored, accessed, managed and updated.
+
+DBMS --> Database Management System
+--> it is a software used to create, store, manage, retrieve and control databases.
+--> types of DBMS:
+1. Relational DBMS: RDBMS
+2. Object Oriented DBMS
+3. Hirarchical DBMS
+4. Network DBMS
+5. NoSQL DBMS
+
+1. RDBMS:
+--> A relational database stores data primarily in the form of tables.
+--> tables are related to each other
+eg:
+
+roll_no  name  course
+1        seema   AWS
+2        amit    Devops
+
+course_id  course
+1           AWS
+2           Devops
+
+course     teacher
+AWS        Suphiya
+Devops      Atul 
+
+row = record / tuple
+coloumn = Attribute/ Field
+
+--> each table has its own primary key.
+--> primary key uniquely identifies each record in a table.
+
+--> A schema means a structure/ design of the database
+
+--> SQL Language: Structured Query Language
+--> SQL is uased to communicate with relational databases.
+
+--> Famous relational databases: MySQL, Oracle DBMS, MariaDB, IBM DB2
+
+Homework: SQL database vs NoSQL database
+
+RDS in AWS
+here AWS is responsible for:
+1. Security and Patching
+2. Automated Backup
+3. Software updates 
+4. multi-AZ
+5. Maintenance
+
+user responsibility:
+1. database settings
+2. Database schema
+
+
+Frontend: user can see and use
+eg: html, css, javascript, react
+
+backend: behind the scenes
+eg: java + spring boot, python, php
+
+
